@@ -1,1 +1,59 @@
 @import "tailwindcss";
+
+h1 {
+  font-size: var(--text-2xl);
+}
+h2 {
+  font-size: var(--text-xl);
+}
+h3 {
+  font-size: var(--text-lg);
+}
+h4,
+h5,
+h6,
+h7,
+h8 {
+  font-weight: bold;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+ol,
+ul,
+menu {
+  padding-inline-start: 1em;
+  list-style: auto;
+}
+
+pre {
+  display: block;
+  font-family: monospace;
+  unicode-bidi: isolate;
+  white-space: pre;
+  margin-block: 1em 1em;
+  margin-inline: 0px;
+  word-break: break-word;
+  white-space: pre-wrap;
+  background-color: #f2f2f2;
+  padding: 1em;
+}
+
+pre > code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+code {
+  font-family: monospace;
+  word-break: break-word;
+  white-space: pre-wrap;
+  background-color: #f2f2f2;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+}
