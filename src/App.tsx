@@ -3,7 +3,6 @@ import { unified } from 'unified'
 import remarkParse from 'remark-parse'
 import remarkMath from 'remark-math'
 import remarkRehype from 'remark-rehype'
-import remarkGfm from 'remark-gfm'
 import rehypeKatex from 'rehype-katex'
 import rehypeStringify from 'rehype-stringify'
 
@@ -40,7 +39,6 @@ export default function App() {
 
   const processor = unified()
     .use(remarkParse) // マークダウンのパース
-    .use(remarkGfm) // GFMサポート
     .use(remarkMath) // 数式の処理
     .use(remarkRehype, { allowDangerousHtml: true }) // HTMLへの変換
     .use(rehypeKatex) // KaTeXでの数式レンダリング
